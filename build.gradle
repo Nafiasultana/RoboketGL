@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+
+    dependencies {
+        // https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager
+        implementation 'io.github.bonigarcia:webdrivermanager:5.8.0'
+// https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+        implementation 'org.seleniumhq.selenium:selenium-java:4.19.1'
+// https://mvnrepository.com/artifact/org.testng/testng
+        testImplementation 'org.testng:testng:7.10.1'
+        //dummy text
+        testImplementation 'com.thedeanda:lorem:2.1'
+
+        implementation 'com.sun.mail:javax.mail:1.6.2'
+        implementation 'com.sun.mail:javax.mail:1.6.2'
+    }
+
+
+    test {
+    useTestNG()
+}
